@@ -1,0 +1,23 @@
+install required dependency packages:
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y raspberrypi-kernal-headers
+sudo apt install -y build-essential
+sudo reboot
+
+STEPS:
+
+->In terminal mkdir __yours__
+->touch kernal_hi.c Makefile
+->nano->/vim kernal_hi.c
+->write your code in kernal_hi.c and use ctrl + s for save and ctrl + x for exit
+->and then write your Makefile
+->nano/vim Makefile
+->write your code in Makefile and use ctrl + s for save and ctrl + x for exit
+->once everything is done in terminal type make to build the file
+->once the build over check uisng ls. And search of a file having .ko extension which is a kernalfie
+->use tmux for muliplexing terminal for easy debugging
+->in one parallel terminal type the sudo dmesg -w for checking the kernal logs
+->in another parallel terminal load the .ko to the kernal type "sudo insmod kernal_hi.ko"
+->you will find the printed statement on the kernal logs
+->and for unloading the .ko to the kernal type "sudo rmmod kernal_hi.ko"
