@@ -21,3 +21,6 @@ STEPS:
 ->in another parallel terminal load the .ko to the kernal type "sudo insmod kernal_hi.ko"
 ->you will find the printed statement on the kernal logs
 ->and for unloading the .ko to the kernal type "sudo rmmod kernal_hi.ko"
+->use modinfo kernal_hi.ko for getting the metadata information about the driver
+->use lsmod to list all the kernal modules
+->use lsmod | grep "module name" to search the name by filtering

@@ -15,4 +15,5 @@ static void __exit ks_exit(void)
 module_init(ks_init);
 module_exit(ks_exit);
 MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Ragul");
 MODULE_DESCRIPTION("A simple kernel module that says hi and bye.");
